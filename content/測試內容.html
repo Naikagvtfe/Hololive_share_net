@@ -139,17 +139,35 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">一月份更新 << <a href='一月份更新.html'>Previous</a> <a href='測試內容.html'>Next</a> >> 測試內容<br /><h1>3D列印作品</h1>
-<p>作品列印後僅可自行使用，不可販賣</p>
-<p>如需轉載，請貼上本站連結</p>
-<p><span style="background-color: #333333;"><span style="color: #ff0000;">列印注意事項</span><span style="color: #ffffff;">:以下檔案皆為可列印機台為25*25*25cm，請注意機台可列印最大之尺寸</span></span></p>
-<hr/>
-<p>檔案下載區:</p>
-<p><a href="./../downloads/XBOX One Cotroller Stand Ayame.zip">XBOX One Controller Stand Ayame</a></p>
-<p><a href="./../downloads/Google Nest mini Stand Mio.zip">Google Nest mini Stand Mio</a></p>
-<p><a href="./../downloads/Handphone Stand SSRB.zip">HandphoneStand SSRB</a></p>
+    <div id="tipue_search_content">3D列印作品 << <a href='3D列印作品.html'>Previous</a> <br /><h1>測試內容</h1>
 <p></p>
-<br />一月份更新 << <a href='一月份更新.html'>Previous</a> <a href='測試內容.html'>Next</a> >> 測試內容</div>
+<script>
+window.onload = function(){
+                var Input = document.getElementById("myInput");
+                var messageBox = document.getElementById("messageBox");
+            
+            function post(){
+                if(Input.value){
+                    var oTime = document.createElement("div");
+				    oTime.className = "time";
+				    var myDate = new  Date();
+				    oTime.innerHTML = myDate.toLocaleString();
+				    messageBox.appendChild(oTime);
+				
+                    var message = document.createElement("div");
+                    message.className="messageX";
+                    message.innerHTML=Input.value;
+                    Input.value="";
+                    messageBox.appendChild(message);
+                }
+            }
+        }
+</script>
+<div>
+<div>使用者留言</div>
+<textarea id="messageBox"></textarea>
+<div><input id="myInput" placeholder="請輸入標題" type="text"/><button onclick="post()">發送</button></div>
+</div><br />3D列印作品 << <a href='3D列印作品.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">

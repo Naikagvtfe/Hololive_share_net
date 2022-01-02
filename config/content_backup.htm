@@ -1,15 +1,14 @@
 <h1>小心地滑</h1>
 <p><strong></strong></p>
 <p><img alt="" height="370" src="/images/Hololive DD Share cutput2.png" width="802"/></p>
-<p><strong>本次更新內容:3D列印作品上架!!</strong></p>
-<p><strong>本次作品有:</strong></p>
-<p><strong>XBOX One Controller Stand Ayame</strong></p>
-<p><strong>Google Nest mini Stand Mio</strong></p>
-<p><strong>Handphone Stand SSRB</strong></p>
+<p><strong>本次更新內容:本次新增留言版!!我想玩看看，如果有看到的人，可以點進測試內容裡面試試看留言唷~~</strong></p>
+<p><strong>本次更新作品有:</strong></p>
+<p><strong>(尚無)</strong></p>
+<p><strong></strong></p>
 <hr/>
 <p><a href="https://github.com/mdecourse/cad2021_hw">網站模板倉儲</a></p>
 <p><a href="https://github.com/Naikagvtfe/Hololive_share_net">我的倉儲</a></p>
-<p>目前版本:HomePage 1.3.1</p>
+<p>目前版本:HomePage 1.3.2</p>
 <p></p><h1>更新內容</h1>
 <p>為所有推送上去的內容做解說</p>
 <h2>十二月份更新</h2>
@@ -31,7 +30,15 @@
 <p><span color="#333333" style="color: #333333;">(新增下載注意事項)</span></p>
 <p><span color="#333333" style="color: #333333;"> </span></p>
 <p><span color="#333333" style="color: #333333;">HomePage1.3</span></p>
-<p><span color="#333333" style="color: #333333;">(更新主頁圖、列印注意事項)</span></p><h1>3D列印作品</h1>
+<p><span color="#333333" style="color: #333333;">(更新主頁圖、列印注意事項)</span></p>
+<p><span color="#333333" style="color: #333333;"> </span></p>
+<p><span style="background-color: #ffffff; color: #333333;">HomePage1.3.1</span></p>
+<p><span style="background-color: #ffffff; color: #333333;">(修正錯誤)</span></p>
+<p><span color="#333333" style="color: #333333;"> </span></p>
+<h2>一月份更新</h2>
+<p>1/02:</p>
+<p>HomePage1.3.2</p>
+<p>(新增:留言板)</p><h1>3D列印作品</h1>
 <p>作品列印後僅可自行使用，不可販賣</p>
 <p>如需轉載，請貼上本站連結</p>
 <p><span style="background-color: #333333;"><span style="color: #ff0000;">列印注意事項</span><span style="color: #ffffff;">:以下檔案皆為可列印機台為25*25*25cm，請注意機台可列印最大之尺寸</span></span></p>
@@ -40,3 +47,33 @@
 <p><a href="/downloads/XBOX One Cotroller Stand Ayame.zip">XBOX One Controller Stand Ayame</a></p>
 <p><a href="/downloads/Google Nest mini Stand Mio.zip">Google Nest mini Stand Mio</a></p>
 <p><a href="/downloads/Handphone Stand SSRB.zip">HandphoneStand SSRB</a></p>
+<p></p>
+<h1>測試內容</h1>
+<p></p>
+<script>
+window.onload = function(){
+                var Input = document.getElementById("myInput");
+                var messageBox = document.getElementById("messageBox");
+            
+            function post(){
+                if(Input.value){
+                    var oTime = document.createElement("div");
+				    oTime.className = "time";
+				    var myDate = new  Date();
+				    oTime.innerHTML = myDate.toLocaleString();
+				    messageBox.appendChild(oTime);
+				
+                    var message = document.createElement("div");
+                    message.className="messageX";
+                    message.innerHTML=Input.value;
+                    Input.value="";
+                    messageBox.appendChild(message);
+                }
+            }
+        }
+</script>
+<div>
+<div>使用者留言</div>
+<textarea id="messageBox"></textarea>
+<div><input id="myInput" placeholder="請輸入標題" type="text"/><button onclick="post()">發送</button></div>
+</div>
