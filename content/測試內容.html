@@ -1,6 +1,6 @@
 <!DOCTYPE html><html>
         <head>
-        <title>Hololive DD Share</title>
+        <title>cad2021 homework site</title>
         <meta charset="utf-8">
 <meta property="head" content="H1">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -140,39 +140,10 @@ img.add_border {
           
         </header>
     <div id="tipue_search_content">3D列印作品 << <a href='3D列印作品.html'>Previous</a> <br /><h1>測試內容</h1>
-<script>
-window.onload = function(){
-		
-		var oMessageBox = document.getElementById("messageBox");
-		var oInput = document.getElementById("myInput");
-		var oPostBtn = document.getElementById("doPost");
-		
-		oPostBtn.onclick = function(){
-			if(oInput.value){
-				//寫入發表留言的時間
-				var oTime = document.createElement("div");
-				oTime.className = "time";
-				var myDate = new  Date();
-				oTime.innerHTML = myDate.toLocaleString();
-				oMessageBox.appendChild(oTime);
-				
-				//寫入留言內容
-				var oMessageContent = document.createElement("div");
-				oMessageContent.className = "message_content";
-				oMessageContent.innerHTML = oInput.value;
-				oInput.value = "";
-				oMessageBox.appendChild(oMessageContent);
-			}
-			
-		}
-		
-	}
-</script>
-<div class="content">
-<div class="title">留言區</div>
-<div class="message_box" id="messageBox"></div>
-<div><input id="myInput" placeholder="請輸入留言內容" type="text"/><button id="doPost">提交</button></div>
-</div><br />3D列印作品 << <a href='3D列印作品.html'>Previous</a> </div>
+<div id="fb-root"></div>
+<script src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&amp;version=v12.0&amp;appId=223351753195943&amp;autoLogAppEvents=1"></script>
+<p>DD們的留言區</p>
+<div class="fb-comments" data-href="https://naikagvtfe.github.io/Hololive_share_net/content/%E6%B8%AC%E8%A9%A6%E5%85%A7%E5%AE%B9.html" data-numposts="5" data-width="200"></div><br />3D列印作品 << <a href='3D列印作品.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
