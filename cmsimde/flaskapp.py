@@ -1991,8 +1991,6 @@ def render_menu2(head, level, page, sitemap=0):
                         <li class="active has-children"><a href="index.html">Home</a>
                         <ul class="dropdown">
                             <li><a href="sitemap.html">Site Map</a></li>
-                            <li><a href="./../reveal/index.html">reveal</a></li>
-                            <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
                      '''
